@@ -1,7 +1,7 @@
 {
   "name": "specials-board",
   "theme": "syntax",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": false,
   "description": "This is a dark theme based on the Coda 2 theme, 'Specials Board'.",
   "repository": "https://github.com/mikelentini/Specials-Board",
