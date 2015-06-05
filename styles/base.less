@@ -2,15 +2,13 @@
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
 // for a full listing of what's available.
-@import "ui-variables";
+// @import "ui-variables";
 @import "colors";
 
-.editor-colors {
+.atom-text-editor, :host {
     background-color: @background;
     color: @font;
-}
 
-.editor {
     .invisible-character,
     .indent-guide {
         color: @invisible;
@@ -18,10 +16,10 @@
 
     .gutter {
         background-color: @background;
-    }
 
-    .gutter .line-number {
-        opacity: 0.4;
+        .line-number {
+            opacity: 0.4;
+        }
     }
 
     .gutter .line-number.folded,
@@ -48,7 +46,7 @@
     }
 }
 
-.bracket-matcher {
+.bracket-matcher .region {
     background-color: @current-line;
     opacity: 0.7;
 }
