@@ -5,7 +5,7 @@
 // @import "ui-variables";
 @import "colors";
 
-.atom-text-editor, :host {
+.atom-text-editor, atom-text-editor {
     background-color: @background;
     color: @font;
 
@@ -51,159 +51,159 @@
     opacity: 0.7;
 }
 
-.comment {
+.syntax--comment {
     color: @comment;
     font-style: italic;
 }
 
-.entity {
+.syntax--entity {
     color: @entity;
 }
 
-.keyword {
+.syntax--keyword {
     color: @keyword;
 
-    &.operator {
-        &.js {
+    &.syntax--operator {
+        &.syntax--js {
             color: @font;
         }
 
-        &.assignment {
+        &.syntax--assignment {
             color: @font;
         }
 
-        &.comparison {
+        &.syntax--comparison {
             color: @font;
         }
     }
 }
 
-.storage.type {
+.syntax--storage.syntax--type {
     color: @keyword;
 }
 
-.js {
-    &.storage {
+.syntax--js {
+    &.syntax--storage {
         color: @keyword;
     }
 
-    &.class {
+    &.syntax--class {
         color: @keyword;
     }
 }
 
-.constant {
+.syntax--constant {
     color: @constant;
 
-    &.numeric {
+    &.syntax--numeric {
         color: @numeric-constant;
     }
 }
 
-.variable {
+.syntax--variable {
     color: @variable;
 }
 
-.delimiter, .brace {
+.syntax--delimiter, .syntax--brace {
     color: @font;
 }
 
-.delimiter.period {
+.syntax--delimiter.syntax--period {
     color: @font;
 }
 
-.invalid.deprecated {
+.syntax--invalid.syntax--deprecated {
     text-decoration: underline;
     color: @red;
 }
 
-.invalid.illegal {
+.syntax--invalid.syntax--syntax--illegal {
     color: @red;
 }
 
-.string {
+.syntax--string {
     color: @string;
 
-    .constant.character.escape {
+    .syntax--constant.syntax--character.syntax--escape {
         color: @string;
     }
 
-    &.regexp {
+    &.syntax--regexp {
         color: @regexp;
         font-style: italic;
 
-        .source.ruby.embedded,
-        .string.regexp.arbitrary-repitition {
+        .syntax--source.syntax--ruby.syntax--embedded,
+        .syntax--string.syntax--regexp.syntax--arbitrary-repitition {
             color: @regexp;
         }
     }
 }
 
-.entity {
-    &.html {
+.syntax--entity {
+    &.syntax--html {
         color: @html-tag;
     }
 }
 
-.html {
-    &.punctuation {
-        &.definition {
-            &.tag {
+.syntax--html {
+    &.syntax--punctuation {
+        &.syntax--definition {
+            &.syntax--tag {
                 color: @html-tag;
             }
 
-            &.string {
+            &.syntax--string {
                 color: @string;
             }
         }
     }
 
-    &.attribute-name {
+    &.syntax--attribute-name {
         color: @html-attr;
     }
 }
 
-.php {
-    &.storage {
-        &.modifier {
+.syntax--php {
+    &.syntax--storage {
+        &.syntax--modifier {
             color: @keyword;
         }
     }
 }
 
-.css {
-    &.property-name {
+.syntax--css {
+    &.syntax--property-name {
         color: @keyword;
     }
 
-    &.name,
-    &.attribute-name {
+    &.syntax--name,
+    &.syntax--attribute-name {
         color: @font;
     }
 
-    &.unit {
+    &.syntax--unit {
         color: @numeric-constant;
     }
 
-    &.punctuation {
+    &.syntax--punctuation {
         color: @font;
 
-        &.comment {
+        &.syntax--comment {
             color: @comment;
         }
 
-        &.string {
+        &.syntax--string {
             color: @string;
         }
     }
 
-    &.constant {
+    &.syntax--constant {
         color: @numeric-constant;
     }
 }
 
-.function {
-    &.builtin {
+.syntax--function {
+    &.syntax--builtin {
         color: @constant;
     }
 }
